@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediastyle.css" >
+</head>
+<body>
+   <nav id="desktop-nav">
+    <div class="logo" id="name-desktop"> Bisrat Serur </div>
+    <div>
+        <ul class="nav-links">
+            <li> <a href="#about">About </a></li>
+            <li><a href="#Exposutes">Exposutes</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#workexpiriance">Work Expiriance</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <nav id="menu">
+         <div class="logo" >Bisrat Serur</div>
+            <div class="list-menu">
+                <div class="list-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </div>
+                 <div class="menu-links">
+                    <li> <a href="#about" onclick="toggleMenu()"> About</a></li>
+                    <li> <a href="#exposures" onclick="toggleMenu()">Exposures </a></li>
+                    <li> <a href="#projects" onclick="toggleMenu()">Projects </a></li>
+                    <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                   <li> <a href="#workexpiriance" onclick="toggleMenu()"> Work Expiriance</a></li> 
+                 </div> 
+            </div>
+        
+     </nav>
+     <section id="profile">
+        <table>
+            <tr>
+                <td>
+        <div class="section-pic-container">
+        <img src="./assets/self.png" alt="Bisrat Serur">
+        </div>
+        </td>
+        <td>
+        <div class="section-text">
+            <p class="section-text-p1"></p>
+            <h1 class="title"> Bisrat Serur</h1>
+            <p class="section-text-p2">CS Graduate</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/BisratSerurResume.pdf', '_blank', 'noopener,noreferrer')">
+                Download CV
+            </button>
+                <button
+                class="btn btn-color-1"
+                onclick="location.href('#contact')">
+                Contact Me
+            </button>
+            </div>
+            <br>
+            <div class="socials">
+                <img src="./assets/handshake.webp" alt="Handshake profile"
+                class="icon" style=" border: black 0.5px;"
+                onclick="location.href='https://app.joinhandshake.com/profiles/bisratserur'">
+                <img src="./assets/linkedin2.jpg" alt="LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/bisrat-serur/'">
+
+                <img src="./assets/github2.jpg" alt="Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/bisratasfaw/'">
+                
+            </div>
+
+        </div>
+        </td>
+        </tr>
+        </table>
+     </section>
+
+     <section id="about">
+        <p class="section-text-p1"> Get to know more</p>
+        <h1 class="title"> About Bisrat Serur</h1>
+        <table>
+            <tr>
+                <td>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assets/self2.png" alt="Bisrat Serur" class="about-pic">
+            </div></td>
+            <td>
+                <P class="section-text-p1" id="workexp-p" > Work Expriance &rarr; </P>
+            </td>
+            <td>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="details-container">
+                    <img src="./assets/Work.png" alt="Work Expernace" class="icon" id="Work"
+                     onclick="window.open('./assets/BisratSerurResume.pdf') ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </td>
+        <td>
+           <div class="v-line"></div> 
+        </td>
+
+            <td>
+                <P class="section-text-p1"> Skills &rarr; </P>
+            </td>
+            <td>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="details-container">
+                    <img src="./assets/skill.png" alt="Skills" class="icon" id="skill"
+                     onclick="window.open('./assets/BisratSerurResume.pdf') ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </td>
+        <td>
+           <div class="v-line"></div> 
+        </td>
+
+            <td>
+                <P class="section-text-p1"> Projects &rarr; </P>
+            </td>
+            <td>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="details-container">
+                    <img src="./assets/projects.png" alt="Skills" class="icon" id="Projects-img"
+                     onclick="window.open('./assets/BisratSerurResume.pdf') ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </td>
+        
+    </tr>    
+    </table>
+     </section>   
+
+     <section>
+        <table class="projects-table">
+            <tbody>
+            <tr>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                
+            <tr>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                
+            </tr>
+            <tr>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                
+            <tr>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+     </section>
+        
+    <script src="Script.js"></script>
+    <style></style>
+   
+</body>
+</html>

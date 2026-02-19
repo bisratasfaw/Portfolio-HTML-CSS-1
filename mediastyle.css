@@ -1,0 +1,30 @@
+
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none !important;
+    }
+
+    #menu {
+        display: flex !important;
+        
+    }
+
+}
+  
+
+/*@media screen and (max-width: 1200px) {
+    body {
+        background: red;
+    }
+        @media screen and (max-width: 1200px){
+    #desktop-nav {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    
+}
+}*/
