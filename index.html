@@ -88,105 +88,100 @@
      <section id="about">
         <p class="section-text-p1"> Get to know more</p>
         <h1 class="title"> About Bisrat Serur</h1>
-        <table>
-            <tr>
-                <td>
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img src="./assets/self2.png" alt="Bisrat Serur" class="about-pic">
-            </div></td>
-            <td>
-                <P class="section-text-p1" id="workexp-p" > Work Expriance &rarr; </P>
-            </td>
-            <td>
-            <div class="about-detail-container">
-                <div class="about-container">
-                    <div class="details-container">
-                    <img src="./assets/Work.png" alt="Work Expernace" class="icon" id="Work"
-                     onclick="window.open('./assets/BisratSerurResume.pdf') ">
-                    </div>
+         <p class="section-text-p1" id="About-p" >
+                    <span class="about-tag">CS Graduate</span>
+                    <span class="about-tag">Business Analyst</span>
+                    <span class="about-tag">CS Masters Student</span>
+                    <span class="about-tag">Software Developer</span>
+                    <span class="about-tag">Web Developer</span>
+                </p>
+        <div class="about-layout">
+            <div class="about-photo-wrap">
+                <div class="section-pic-container">
+                    <img src="./assets/self2.png" alt="Bisrat Serur" class="about-pic">
                 </div>
+               
+            </div>
+
+            <div class="about-cards">
+                <article class="about-card" onclick="window.open('./assets/BisratSerurResume.pdf', '_blank', 'noopener,noreferrer')">
+                    <img src="./assets/Work.png" alt="Work Experience" class="icon about-card-icon" id="work">
+                    <h3>Work Experience</h3>
+                    <p>Explore my real-world Expriances as a Enturprenur.</p>
+                </article>
+
+                <article class="about-card" onclick="window.open('./assets/BisratSerurResume.pdf', '_blank', 'noopener,noreferrer')">
+                    <img src="./assets/skill.png" alt="Skills" class="icon about-card-icon" id="skill">
+                    <h3>Skills</h3>
+                    <p>See my core strengths in software development, systems, and problem solving.</p>
+                </article>
+
+                <article class="about-card" onclick="location.href='#projects'">
+                    <img src="./assets/projects.png" alt="Projects" class="icon about-card-icon" id="projects-icon">
+                    <h3>Projects</h3>
+                    <p>View selected builds including web apps, automation, and technical case work.</p>
+                </article>
             </div>
         </div>
-        </td>
-        <td>
-           <div class="v-line"></div> 
-        </td>
-
-            <td>
-                <P class="section-text-p1"> Skills &rarr; </P>
-            </td>
-            <td>
-            <div class="about-detail-container">
-                <div class="about-container">
-                    <div class="details-container">
-                    <img src="./assets/skill.png" alt="Skills" class="icon" id="skill"
-                     onclick="window.open('./assets/BisratSerurResume.pdf') ">
-                    </div>
-                </div>
-            </div>
-        </div>
-        </td>
-        <td>
-           <div class="v-line"></div> 
-        </td>
-
-            <td>
-                <P class="section-text-p1"> Projects &rarr; </P>
-            </td>
-            <td>
-            <div class="about-detail-container">
-                <div class="about-container">
-                    <div class="details-container">
-                    <img src="./assets/projects.png" alt="Skills" class="icon" id="Projects-img"
-                     onclick="window.open('./assets/BisratSerurResume.pdf') ">
-                    </div>
-                </div>
-            </div>
-        </div>
-        </td>
-        
-    </tr>    
-    </table>
-     </section>   
-
-     <section>
-        <table class="projects-table">
-            <tbody>
-            <tr>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                
-            <tr>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                
-            </tr>
-            <tr>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                
-            <tr>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-                <td> <img src="./assets/TradingBot.png" alt="Trading bot" class="img-Project"> <p class="section-text-p1">Trading Bot </p></td>
-            </tr>
-            </tbody>
-        </table>
-
-
-
-
-
-
-
      </section>
-        
-    <script src="Script.js"></script>
+     <p class="title">Projects</p>
+     <section id="projects" class="projects-main">
+        <p class="section-text-p1">My best builds</p>
+        <h2 class="projects-title">12 Featured Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <img src="./assets/TradingBot.png" alt="XAU/USD Trading AI" class="img-Project">
+                <h3>XAU/USD Trading AI</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/projectMgmt.png" alt="Project Management System" class="img-Project">
+                <h3>Project Management System</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/Network.png" alt="Network Design" class="img-Project">
+                <h3>Network Design</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/TradingBot.png" alt="Trading Automation" class="img-Project">
+                <h3>Trading Automation</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/projectMgmt.png" alt="Workflow Platform" class="img-Project">
+                <h3>Workflow Platform</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/Network.png" alt="Enterprise Network" class="img-Project">
+                <h3>Enterprise Network</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/TradingBot.png" alt="Signal Intelligence" class="img-Project">
+                <h3>Signal Intelligence</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/projectMgmt.png" alt="Execution Dashboard" class="img-Project">
+                <h3>Execution Dashboard</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/Network.png" alt="Secure Ops Network" class="img-Project">
+                <h3>Secure Ops Network</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/TradingBot.png" alt="Portfolio Bot" class="img-Project">
+                <h3>Portfolio Bot</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/projectMgmt.png" alt="Sprint Monitor" class="img-Project">
+                <h3>Sprint Monitor</h3>
+            </article>
+            <article class="project-card">
+                <img src="./assets/Network.png" alt="Cloud-LAN Topology" class="img-Project">
+                <h3>Cloud-LAN Topology</h3>
+            </article>
+        </div>
+     </section>
+<script src="Script.js"></script>
     <style></style>
    
 </body>
 </html>
+
