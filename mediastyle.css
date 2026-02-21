@@ -96,6 +96,14 @@
         padding: 1.4rem 1rem;
     }
 
+    .contact-main {
+        padding: 1.4rem 1rem;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
     .projects-grid {
         grid-template-columns: repeat(2, minmax(140px, 1fr));
     }
@@ -148,6 +156,29 @@
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+    }
+
+    .contact-card p {
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
   
