@@ -104,13 +104,13 @@
             </div>
 
             <div class="about-cards">
-                <article class="about-card" onclick="window.open('./assets/BisratSerurResume.pdf', '_blank', 'noopener,noreferrer')">
+                <article class="about-card" id="work-card">
                     <img src="./assets/Work.png" alt="Work Experience" class="icon about-card-icon" id="work">
                     <h3>Work Experience</h3>
                     <p>Explore my real-world Expriances as a Enturprenur.</p>
                 </article>
 
-                <article class="about-card" onclick="window.open('./assets/BisratSerurResume.pdf', '_blank', 'noopener,noreferrer')">
+                <article class="about-card" id="skill-card">
                     <img src="./assets/skill.png" alt="Skills" class="icon about-card-icon" id="skill">
                     <h3>Skills</h3>
                     <p>See my core strengths in software development, systems, and problem solving.</p>
@@ -124,58 +124,266 @@
             </div>
         </div>
      </section>
+     <div class="skills-modal" id="skills-modal" aria-hidden="true">
+        <div class="skills-modal__backdrop" data-close-skills-modal></div>
+        <div class="skills-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="skills-modal-title">
+            <button type="button" class="skills-modal__close" id="skills-modal-close" aria-label="Close skills and exposures popup">&times;</button>
+            <p class="skills-modal__eyebrow">Skills and Exposures</p>
+            <h2 id="skills-modal-title">Technical Foundation and Professional Strengths</h2>
+            <p class="skills-modal__intro">
+            </p>
+            <div class="skills-modal__grid">
+                <article class="skills-group">
+                    <h3>Core CS</h3>
+                    <ul>
+                        <li>Programming fundamentals: procedural and object-oriented</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Software Engineering principles</li>
+                        <li>Software Testing and Quality Assurance</li>
+                        <li>Compiler Design fundamentals</li>
+                        <li>Distributed Systems concepts</li>
+                        <li>Operating Systems fundamentals</li>
+                        <li>Systems Analysis and Design</li>
+                    </ul>
+                </article>
+                <article class="skills-group">
+                    <h3>Web, Apps, and Databases</h3>
+                    <ul>
+                        <li>Web Design and Development: HTML, CSS, and basic JavaScript concepts</li>
+                        <li>Front-end and back-end web development fundamentals</li>
+                        <li>Windows Application Development</li>
+                        <li>Mobile Application Development: Android and mobile app concepts</li>
+                        <li>User interface and usability principles</li>
+                        <li>Database Design and Management: SQL and relational databases</li>
+                        <li>Database Programming</li>
+                    </ul>
+                </article>
+                <article class="skills-group">
+                    <h3>Systems, Networking, and Security</h3>
+                    <ul>
+                        <li>Computer Networks: network models, protocols, and routing concepts</li>
+                        <li>Network Administration fundamentals</li>
+                        <li>Unix and Linux Operating Systems</li>
+                        <li>Unix Systems Administration</li>
+                        <li>Computer Systems Security fundamentals</li>
+                        <li>System-level troubleshooting</li>
+                        <li>Introductory DevOps and system configuration concepts</li>
+                    </ul>
+                </article>
+                <article class="skills-group">
+                    <h3>Data, Math, and Analytics</h3>
+                    <ul>
+                        <li>Data Mining fundamentals</li>
+                        <li>Information Retrieval concepts</li>
+                        <li>Artificial Intelligence fundamentals</li>
+                        <li>Numerical Analysis</li>
+                        <li>Linear and Discrete Mathematical Programming</li>
+                        <li>Statistics and Probability</li>
+                        <li>Analytical and problem-solving skills</li>
+                    </ul>
+                </article>
+                <article class="skills-group">
+                    <h3>Project and Professional Skills</h3>
+                    <ul>
+                        <li>IT Project Management</li>
+                        <li>Technical Documentation and Report Writing</li>
+                        <li>Research Methods in IT</li>
+                        <li>Senior Capstone Project execution</li>
+                        <li>Team-based software development</li>
+                        <li>Requirements gathering and analysis</li>
+                        <li>Time management and task prioritization</li>
+                    </ul>
+                </article>
+                <article class="skills-group">
+                    <h3>Tools and Business Skills</h3>
+                    <ul>
+                        <li>Unix and Linux command-line environment</li>
+                        <li>Database management systems at academic level</li>
+                        <li>Version control concepts with Git-level understanding</li>
+                        <li>Development and testing workflows</li>
+                        <li>System configuration and administration basics</li>
+                        <li>Technical communication</li>
+                        <li>Problem-solving and critical thinking</li>
+                        <li>Entrepreneurship</li>
+                        <li>Accounting and business process understanding</li>
+                        <li>Collaboration in academic and technical teams</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+     </div>
+     <div class="work-rail" id="work-rail" aria-hidden="true">
+        <div class="work-rail__backdrop" data-close-work-rail></div>
+        <aside class="work-rail__panel" role="dialog" aria-modal="true" aria-labelledby="work-rail-title">
+            <button type="button" class="work-rail__close" id="work-rail-close" aria-label="Close work experience panel">&times;</button>
+            <div class="work-rail__hero">
+                <p class="work-rail__eyebrow">Work Experience</p>
+                <h2 id="work-rail-title">Operational leadership, business execution, and ownership</h2>
+                <p class="work-rail__intro">
+                </p>
+            </div>
+            <div class="work-rail__timeline">
+                <article class="work-entry">
+                    <div class="work-entry__dot"></div>
+                    <div class="work-entry__content">
+                        <p class="work-entry__meta">Mar 2020 - Dec 2025</p>
+                        <h3>CEO &amp; Founder</h3>
+                        <p class="work-entry__company">Job Trading PLC</p>
+                        <ul>
+                            <li>Led end-to-end strategy execution and translated business requirements into scalable operational and technical solutions.</li>
+                            <li>Designed and implemented process workflows that improved efficiency and reduced execution delays.</li>
+                            <li>Conducted data-driven market and product analysis to identify trends, customer needs, and competitive risks.</li>
+                            <li>Owned budgeting and resource allocation decisions, optimizing ROI through cost and performance analysis.</li>
+                            <li>Monitored product quality and customer satisfaction to reinforce long-term brand trust.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="work-entry">
+                    <div class="work-entry__dot"></div>
+                    <div class="work-entry__content">
+                        <p class="work-entry__meta">Operations and Inventory Leadership</p>
+                        <h3>Manager</h3>
+                        <p class="work-entry__company">Bisrat Asfaw Imports</p>
+                        <ul>
+                            <li>Managed inventory, logistics, and supplier coordination to ensure consistent product availability.</li>
+                            <li>Implemented workflow improvements in restocking and sales operations, increasing reliability and speed.</li>
+                            <li>Analyzed sales data and demand trends to guide forecasting and inventory planning.</li>
+                            <li>Coordinated cross-functional communication between suppliers, agents, and sales teams.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="work-entry">
+                    <div class="work-entry__dot"></div>
+                    <div class="work-entry__content">
+                        <p class="work-entry__meta">Operations, Supply Chain, and Growth</p>
+                        <h3>COO &amp; Founder</h3>
+                        <p class="work-entry__company">Prime Store Trading PLC</p>
+                        <ul>
+                            <li>Led daily operations including inventory management, restocking strategy, and sales execution.</li>
+                            <li>Developed scalable operational processes to support business growth and improve execution speed.</li>
+                            <li>Communicated with international agents to maintain supply chain continuity and quality standards.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="work-rail__footer">
+                <p>Aligned with ownership, customer focus, bias for action, and delivering results.</p>
+            </div>
+        </aside>
+     </div>
      <p class="title">Projects</p>
      <section id="projects" class="projects-main">
         <p class="section-text-p1">My best builds</p>
-        <h2 class="projects-title">12 Featured Projects</h2>
+        <h2 class="projects-title">18 Portfolio Projects</h2>
         <div class="projects-grid">
             <article class="project-card">
-                <img src="./assets/TradingBot.png" alt="XAU/USD Trading AI" class="img-Project">
+                <img src="https://cdn.pixabay.com/photo/2021/08/06/00/37/stock-trading-6525081_640.jpg" alt="XAU/USD Trading AI" class="img-Project" loading="lazy">
                 <h3>XAU/USD Trading AI</h3>
+                <p>Built a web-based AI system for XAU/USD price analysis and prediction using historical market data.</p>
+                <p class="project-tech">Python, Machine Learning, Web Technologies</p>
             </article>
             <article class="project-card">
-                <img src="./assets/projectMgmt.png" alt="Project Management System" class="img-Project">
+                <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="Project Management System" class="img-Project" loading="lazy">
                 <h3>Project Management System</h3>
+                <p>Designed a project management system for real-world organizational use to solve workflow challenges.</p>
+                <p class="project-tech">Web Technologies, Database Systems</p>
             </article>
             <article class="project-card">
-                <img src="./assets/Network.png" alt="Network Design" class="img-Project">
-                <h3>Network Design</h3>
+                <img src="https://cdn.pixabay.com/photo/2023/12/03/10/37/ai-generated-8427261_1280.jpg" alt="Network Design" class="img-Project" loading="lazy">
+                <h3>Organization-Level Network Design</h3>
+                <p>Designed and configured enterprise network routing in a scalable simulated infrastructure.</p>
+                <p class="project-tech">Cisco Packet Tracer, Networking Protocols</p>
             </article>
             <article class="project-card">
-                <img src="./assets/TradingBot.png" alt="Trading Automation" class="img-Project">
-                <h3>Trading Automation</h3>
+                <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="Luna Agro Industries IT Systems Research" class="img-Project" loading="lazy">
+                <h3>Luna Agro Industries IT Systems Research</h3>
+                <p>Analyzed IT system implementation strategies and recommended ways to improve operational efficiency.</p>
+                <p class="project-tech">IT Systems Analysis, Research Methods</p>
             </article>
             <article class="project-card">
-                <img src="./assets/projectMgmt.png" alt="Workflow Platform" class="img-Project">
-                <h3>Workflow Platform</h3>
+                <img src="https://images.unsplash.com/photo-1745848413099-13adc3aaf308?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Social Network Application" class="img-Project" loading="lazy">
+                <h3>Social Network Application (Socall)</h3>
+                <p>Developed an Android social networking app with real-time messaging and WhatsApp-like communication features.</p>
+                <p class="project-tech">Java, Android Studio, Mobile Development</p>
             </article>
             <article class="project-card">
-                <img src="./assets/Network.png" alt="Enterprise Network" class="img-Project">
-                <h3>Enterprise Network</h3>
+                <img src="https://images.unsplash.com/photo-1766299892683-d50398e31823?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neSUyMG1lZGljYWx8ZW58MHx8MHx8fDA%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Health Prediction Data Mining Project" class="img-Project" loading="lazy">
+                <h3>Health Prediction Data Mining Project</h3>
+                <p>Trained AI models to predict stroke and diabetes using supervised learning and data mining techniques.</p>
+                <p class="project-tech">Python, Machine Learning, Data Mining</p>
             </article>
             <article class="project-card">
-                <img src="./assets/TradingBot.png" alt="Signal Intelligence" class="img-Project">
-                <h3>Signal Intelligence</h3>
+                <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557466_1280.jpg" alt="Instruction-Level Algorithm Project" class="img-Project" loading="lazy">
+                <h3>Instruction-Level Algorithm Project</h3>
+                <p>Developed instruction-level execution algorithms by applying compiler design principles.</p>
+                <p class="project-tech">C++, Compiler Design</p>
             </article>
             <article class="project-card">
-                <img src="./assets/projectMgmt.png" alt="Execution Dashboard" class="img-Project">
-                <h3>Execution Dashboard</h3>
+                <img src="https://images.unsplash.com/photo-1636793298494-a79e1998d6a9?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZSUyMGRldGVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Face Emotion Recognition System" class="img-Project" loading="lazy">
+                <h3>Face Emotion Recognition System</h3>
+                <p>Built an AI model to detect faces and recognize emotions from image datasets.</p>
+                <p class="project-tech">Python, Artificial Intelligence, Computer Vision</p>
             </article>
             <article class="project-card">
-                <img src="./assets/Network.png" alt="Secure Ops Network" class="img-Project">
-                <h3>Secure Ops Network</h3>
+                <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557466_1280.jpg" alt="Streaming Website" class="img-Project" loading="lazy">
+                <h3>Streaming Website</h3>
+                <p>Developed a movie and TV streaming platform with a backend database for content management.</p>
+                <p class="project-tech">ASP.NET, Database Systems</p>
             </article>
             <article class="project-card">
-                <img src="./assets/TradingBot.png" alt="Portfolio Bot" class="img-Project">
-                <h3>Portfolio Bot</h3>
+                <img src="https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Dantel 3D Graphics Project" class="img-Project" loading="lazy">
+                <h3>Dantel 3D Graphics Project</h3>
+                <p>Modeled a traditional fabric design in 3D using computer graphics rendering techniques.</p>
+                <p class="project-tech">C++, Computer Graphics</p>
             </article>
             <article class="project-card">
-                <img src="./assets/projectMgmt.png" alt="Sprint Monitor" class="img-Project">
-                <h3>Sprint Monitor</h3>
+                <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557466_1280.jpg" alt="Web Scraper Application" class="img-Project" loading="lazy">
+                <h3>Web Scraper Application</h3>
+                <p>Built an automated web data extraction tool and processed scraped data efficiently.</p>
+                <p class="project-tech">C#, Web Scraping</p>
             </article>
             <article class="project-card">
-                <img src="./assets/Network.png" alt="Cloud-LAN Topology" class="img-Project">
-                <h3>Cloud-LAN Topology</h3>
+                <img src="https://cdn.pixabay.com/photo/2023/12/03/10/37/ai-generated-8427261_1280.jpg" alt="Train Management and Dispatch System" class="img-Project" loading="lazy">
+                <h3>Train Management &amp; Dispatch System</h3>
+                <p>Developed a train dispatch and management system with optimized data structure workflows.</p>
+                <p class="project-tech">C++, MSSQL, Data Structures</p>
+            </article>
+            <article class="project-card">
+                <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="Web-Based Employee Attendance System" class="img-Project" loading="lazy">
+                <h3>Web-Based Employee Attendance System</h3>
+                <p>Created a web-based attendance and management platform for employee record tracking.</p>
+                <p class="project-tech">HTML, CSS, JavaScript, MSSQL</p>
+            </article>
+            <article class="project-card">
+                <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="Employee Record Management System" class="img-Project" loading="lazy">
+                <h3>Employee Record Management System</h3>
+                <p>Built an object-oriented employee management system backed by a relational database.</p>
+                <p class="project-tech">C#, MSSQL</p>
+            </article>
+            <article class="project-card">
+                <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557466_1280.jpg" alt="Notepad Application" class="img-Project" loading="lazy">
+                <h3>Notepad Application</h3>
+                <p>Built a desktop notepad application by applying object-oriented programming concepts.</p>
+                <p class="project-tech">Java, OOP</p>
+            </article>
+            <article class="project-card">
+                <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="Employee Record and Attendance Management" class="img-Project" loading="lazy">
+                <h3>Employee Record &amp; Attendance Management</h3>
+                <p>Designed an attendance-based employee record system with database-driven record management.</p>
+                <p class="project-tech">MSSQL, DBMS</p>
+            </article>
+            <article class="project-card">
+                <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557466_1280.jpg" alt="Tetris Game Development" class="img-Project" loading="lazy">
+                <h3>Game Development: Tetris</h3>
+                <p>Developed a playable Tetris game with core game logic and user controls.</p>
+                <p class="project-tech">C++, Game Development</p>
+            </article>
+            <article class="project-card">
+                <img src="https://cdn.pixabay.com/photo/2015/01/27/19/42/diary-614149_640.jpg" alt="Calendar System" class="img-Project" loading="lazy">
+                <h3>Calendar System</h3>
+                <p>Built a calendar application with scheduling, reminders, and event management logic.</p>
+                <p class="project-tech">C++</p>
             </article>
         </div>
      </section>
@@ -184,13 +392,13 @@
         <h2 class="contact-title">Contact</h2>
         <div class="contact-layout">
             <div class="contact-cards">
-                <a class="contact-card" href="mailto:bisratserur@gmail.com">
+                <a class="contact-card" href="mailto:Serurbisrat@gmail.com">
                     <h3>Email</h3>
-                    <p>bisratserur@gmail.com</p>
+                    <p>Serurbisrat@gmail.com</p>
                 </a>
-                <a class="contact-card" href="tel:+12025550123">
+                <a class="contact-card" href="tel:+12272820219">
                     <h3>Phone</h3>
-                    <p>+1 (202) 555-0123</p>
+                    <p>+1 (227) 282-0219</p>
                 </a>
                 <a class="contact-card" href="https://www.linkedin.com/in/bisrat-serur/" target="_blank" rel="noopener noreferrer">
                     <h3>LinkedIn</h3>
@@ -205,7 +413,7 @@
                     <p>github.com/bisratasfaw</p>
                 </a>
             </div>
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="#" method="post" data-recipient-email="Serurbisrat@gmail.com">
                 <label for="name">Name</label>
                 <input id="name" name="name" type="text" placeholder="Your name" required>
 
@@ -213,9 +421,10 @@
                 <input id="email" name="email" type="email" placeholder="your@email.com" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
 
                 <button type="submit" class="btn btn-color-1">Send Message</button>
+                <p class="contact-form-status" aria-live="polite"></p>
             </form>
         </div>
     </section>
@@ -235,5 +444,4 @@
    
 </body>
 </html>
-
 

@@ -125,6 +125,23 @@
         width: min(70vw, 220px);
         height: min(70vw, 220px);
     }
+
+    .skills-modal__dialog {
+        padding: 1.2rem;
+    }
+
+    .skills-modal__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-rail__panel {
+        width: min(100%, 100vw);
+        padding: 1.2rem 1rem 1.1rem;
+    }
+
+    .work-rail__hero h2 {
+        max-width: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -179,6 +196,33 @@
     .footer-links {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .skills-modal {
+        padding: 0.85rem;
+    }
+
+    .skills-modal__dialog {
+        max-height: 88vh;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .skills-modal__close {
+        top: 0.65rem;
+        right: 0.65rem;
+    }
+
+    .work-rail__panel {
+        padding: 1rem 0.85rem;
+    }
+
+    .work-entry {
+        gap: 0.8rem;
+    }
+
+    .work-entry__content {
+        padding: 0.9rem;
     }
 }
   
