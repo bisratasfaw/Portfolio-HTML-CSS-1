@@ -1,0 +1,53 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="animated-logo">
+  <defs>
+    <style>
+      @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.6; }
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 4px rgba(179, 195, 199, 0.5)); }
+        50% { filter: drop-shadow(0 0 12px rgba(179, 195, 199, 0.9)); }
+      }
+      .circle-ring {
+        animation: rotate 8s linear infinite;
+        transform-origin: 60px 60px;
+      }
+      .inner-ring {
+        animation: rotate 5s linear reverse infinite;
+        transform-origin: 60px 60px;
+      }
+      .logo-text {
+        animation: pulse 3s ease-in-out infinite;
+        filter: drop-shadow(0 0 4px rgba(179, 195, 199, 0.5));
+      }
+    </style>
+  </defs>
+  
+  <!-- Outer rotating ring -->
+  <circle class="circle-ring" cx="60" cy="60" r="58" fill="none" stroke="#B3C3C7" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Inner rotating ring -->
+  <circle class="inner-ring" cx="60" cy="60" r="50" fill="none" stroke="#B3C3C7" stroke-width="1.5" opacity="0.2"/>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#B3C3C7" stroke-width="0.5" opacity="0.1"/>
+  
+  <!-- Accent dots -->
+  <circle cx="60" cy="10" r="2.5" fill="#B3C3C7" opacity="0.6"/>
+  <circle cx="110" cy="60" r="2.5" fill="#B3C3C7" opacity="0.6"/>
+  <circle cx="60" cy="110" r="2.5" fill="#B3C3C7" opacity="0.6"/>
+  <circle cx="10" cy="60" r="2.5" fill="#B3C3C7" opacity="0.6"/>
+  
+  <!-- Main circle background -->
+  <circle cx="60" cy="60" r="48" fill="rgba(38, 45, 55, 0.1)" stroke="#B3C3C7" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Logo text (BS initials) -->
+  <g class="logo-text">
+    <text x="60" y="70" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#B3C3C7" text-anchor="middle" letter-spacing="2">BS</text>
+  </g>
+</svg>

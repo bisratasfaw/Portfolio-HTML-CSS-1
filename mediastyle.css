@@ -15,6 +15,11 @@
         color: #d3dfe1;
     }
 
+    #menu .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
     .menu-links a {
         color: #052010;
         font-size: 1.1rem;
