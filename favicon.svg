@@ -1,0 +1,26 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes rotateFavicon {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .circle-ring-fav {
+        animation: rotateFavicon 8s linear infinite;
+        transform-origin: 32px 32px;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" fill="#1a2e3a" rx="8"/>
+  
+  <!-- Rotating ring -->
+  <circle class="circle-ring-fav" cx="32" cy="32" r="28" fill="none" stroke="#B3C3C7" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Inner circle -->
+  <circle cx="32" cy="32" r="24" fill="rgba(38, 45, 55, 0.3)" stroke="#B3C3C7" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Initials text -->
+  <text x="32" y="38" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#B3C3C7" text-anchor="middle" letter-spacing="1">BS</text>
+</svg>
