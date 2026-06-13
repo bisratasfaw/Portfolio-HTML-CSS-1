@@ -42,7 +42,8 @@
         grid-template-columns: repeat(2, minmax(180px, 1fr));
     }
 
-    .projects-grid {
+    .projects-grid,
+    .builds-grid {
         grid-template-columns: repeat(3, minmax(160px, 1fr));
     }
 }
@@ -104,8 +105,13 @@
         grid-template-columns: 1fr;
     }
 
-    .projects-grid {
+    .projects-grid,
+    .builds-grid {
         grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+
+    .builds-main {
+        padding: 1.4rem 1rem;
     }
 
     .projects-table,
@@ -171,7 +177,8 @@
         font-size: 0.85rem;
     }
 
-    .projects-grid {
+    .projects-grid,
+    .builds-grid {
         grid-template-columns: 1fr;
     }
 
