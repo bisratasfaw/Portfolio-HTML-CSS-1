@@ -1190,11 +1190,13 @@ a:hover{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.25s ease;
 }
 
 .card-modal.is-open .card-modal__backdrop {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .card-modal__dialog {
