@@ -525,6 +525,21 @@
             <p class="footer-copy">&copy; 2026 Bisrat Serur. All rights reserved.</p>
         </div>
     </footer>
+<!-- ── Card detail modal ─────────────────────────────────── -->
+<div class="card-modal" id="card-modal" aria-hidden="true">
+    <div class="card-modal__backdrop" data-close-card-modal></div>
+    <div class="card-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="card-modal-title">
+        <button type="button" class="card-modal__close" id="card-modal-close" aria-label="Close project details">&times;</button>
+        <img class="card-modal__img" id="card-modal-img" src="" alt="" loading="lazy">
+        <div class="card-modal__body">
+            <span class="card-modal__badge" id="card-modal-badge"></span>
+            <h2 class="card-modal__title" id="card-modal-title"></h2>
+            <p class="card-modal__desc" id="card-modal-desc"></p>
+            <pre class="card-modal__code" id="card-modal-code"><code id="card-modal-snippet"></code></pre>
+            <p class="card-modal__tech" id="card-modal-tech"></p>
+        </div>
+    </div>
+</div>
 <script src="Script.js"></script>
     <style></style>
    

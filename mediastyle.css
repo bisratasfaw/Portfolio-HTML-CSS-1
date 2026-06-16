@@ -231,6 +231,33 @@
     .work-entry__content {
         padding: 0.9rem;
     }
+
+    .card-modal {
+        padding: 0.65rem;
+    }
+
+    .card-modal__dialog {
+        max-height: 92vh;
+        border-radius: 16px;
+    }
+
+    .card-modal__img {
+        height: 170px;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .card-modal__body {
+        padding: 1.1rem 1.1rem 1.3rem;
+    }
+
+    .card-modal__title {
+        font-size: 1.15rem;
+    }
+
+    .card-modal__code {
+        font-size: 0.73rem;
+        padding: 0.8rem 0.9rem;
+    }
 }
   
 
