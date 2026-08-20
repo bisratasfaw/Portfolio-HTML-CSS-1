@@ -1,548 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediastyle.css" >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bisrat Serur - AI/ML Engineer</title>
+<meta name="description" content="AI/ML engineer and full-stack builder shipping production systems end to end. PyTorch, FastAPI, Next.js, geospatial data platforms.">
+<meta property="og:title" content="Bisrat Serur - AI/ML Engineer">
+<meta property="og:description" content="AI/ML engineering, shipped end to end. From PyTorch model training to production SaaS platforms.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bisratasfaw.github.io/Portfolio-HTML-CSS-1/">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<script>
+// Resolve theme before first paint: stored choice wins, else system preference.
+(function () {
+  var stored = null;
+  try { stored = localStorage.getItem('theme'); } catch (e) {}
+  var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+})();
+</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav id="desktop-nav">
-    <div class="logo" id="name-desktop"> Bisrat Serur </div>
-    <div>
-        <ul class="nav-links">
-            <li> <a href="#about">About </a></li>
-            <li><a href="#Exposutes">Exposutes</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#builds">Builds</a></li>
-            <li><a href="#workexpiriance">Work Expiriance</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </div>
-    </nav>
-    <nav id="menu">
-         <div class="logo" >Bisrat Serur</div>
-            <div class="list-menu">
-                <div class="list-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                 </div>
-                 <div class="menu-links">
-                    <li> <a href="#about" onclick="toggleMenu()"> About</a></li>
-                    <li> <a href="#exposures" onclick="toggleMenu()">Exposures </a></li>
-                    <li> <a href="#projects" onclick="toggleMenu()">Projects </a></li>
-                    <li> <a href="#builds" onclick="toggleMenu()">Builds </a></li>
-                    <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                   <li> <a href="#workexpiriance" onclick="toggleMenu()"> Work Expiriance</a></li> 
-                 </div> 
-            </div>
-        
-     </nav>
-     <section id="profile">
-        <table>
-            <tr>
-                <td>
-        <div class="section-pic-container">
-        <img src="./assets/self.png" alt="Bisrat Serur">
-        </div>
-        </td>
-        <td>
-        <div class="section-text">
-            <p class="section-text-p1"></p>
-            <h1 class="title"> Bisrat Serur</h1>
-            <p class="section-text-p2">CS Graduate</p>
-            <div class="btn-container">
-                <button
-                class="btn btn-color-2"
-                onclick="window.open('./assets/BisratSerurResume.pdf', '_blank', 'noopener,noreferrer')">
-                Download CV
-            </button>
-                <button
-                class="btn btn-color-1"
-                onclick="location.href('#contact')">
-                Contact Me
-            </button>
-            </div>
-            <br>
-            <div class="socials">
-                <img src="./assets/handshake.webp" alt="Handshake profile"
-                class="icon" style=" border: black 0.5px;"
-                onclick="location.href='https://app.joinhandshake.com/profiles/bisratserur'">
-                <img src="./assets/linkedin2.jpg" alt="LinkedIn profile"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/bisrat-serur/'">
 
-                <img src="./assets/github2.jpg" alt="Github profile"
-                class="icon"
-                onclick="location.href='https://github.com/bisratasfaw/'">
-                
-            </div>
-
-        </div>
-        </td>
-        </tr>
-        </table>
-     </section>
-
-     <section id="about">
-        <p class="section-text-p1"> Get to know more</p>
-        <h1 class="title"> About Bisrat Serur</h1>
-         <p class="section-text-p1" id="About-p" >
-                    <span class="about-tag">CS Graduate</span>
-                    <span class="about-tag">Business Analyst</span>
-                    <span class="about-tag">CS Masters Student</span>
-                    <span class="about-tag">Software Developer</span>
-                    <span class="about-tag">Web Developer</span>
-                </p>
-        <div class="about-layout">
-            <div class="about-photo-wrap">
-                <div class="section-pic-container">
-                    <img src="./assets/self2.png" alt="Bisrat Serur" class="about-pic">
-                </div>
-               
-            </div>
-
-            <div class="about-cards">
-                <article class="about-card" id="work-card">
-                    <img src="./assets/Work.png" alt="Work Experience" class="icon about-card-icon" id="work">
-                    <h3>Work Experience</h3>
-                    <p>Explore my real-world Expriances as a Enturprenur.</p>
-                </article>
-
-                <article class="about-card" id="skill-card">
-                    <img src="./assets/skill.png" alt="Skills" class="icon about-card-icon" id="skill">
-                    <h3>Skills</h3>
-                    <p>See my core strengths in software development, systems, and problem solving.</p>
-                </article>
-
-                <article class="about-card" onclick="location.href='#projects'">
-                    <img src="./assets/projects.png" alt="Projects" class="icon about-card-icon" id="projects-icon">
-                    <h3>Projects</h3>
-                    <p>View selected builds including web apps, automation, and technical case work.</p>
-                </article>
-            </div>
-        </div>
-     </section>
-     <div class="skills-modal" id="skills-modal" aria-hidden="true">
-        <div class="skills-modal__backdrop" data-close-skills-modal></div>
-        <div class="skills-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="skills-modal-title">
-            <button type="button" class="skills-modal__close" id="skills-modal-close" aria-label="Close skills and exposures popup">&times;</button>
-            <p class="skills-modal__eyebrow">Skills and Exposures</p>
-            <h2 id="skills-modal-title">Technical Foundation and Professional Strengths</h2>
-            <p class="skills-modal__intro">
-            </p>
-            <div class="skills-modal__grid">
-                <article class="skills-group">
-                    <h3>Core CS</h3>
-                    <ul>
-                        <li>Programming fundamentals: procedural and object-oriented</li>
-                        <li>Object-Oriented Programming (OOP)</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Software Engineering principles</li>
-                        <li>Software Testing and Quality Assurance</li>
-                        <li>Compiler Design fundamentals</li>
-                        <li>Distributed Systems concepts</li>
-                        <li>Operating Systems fundamentals</li>
-                        <li>Systems Analysis and Design</li>
-                    </ul>
-                </article>
-                <article class="skills-group">
-                    <h3>Web, Apps, and Databases</h3>
-                    <ul>
-                        <li>Web Design and Development: HTML, CSS, and basic JavaScript concepts</li>
-                        <li>Front-end and back-end web development fundamentals</li>
-                        <li>Windows Application Development</li>
-                        <li>Mobile Application Development: Android and mobile app concepts</li>
-                        <li>User interface and usability principles</li>
-                        <li>Database Design and Management: SQL and relational databases</li>
-                        <li>Database Programming</li>
-                    </ul>
-                </article>
-                <article class="skills-group">
-                    <h3>Systems, Networking, and Security</h3>
-                    <ul>
-                        <li>Computer Networks: network models, protocols, and routing concepts</li>
-                        <li>Network Administration fundamentals</li>
-                        <li>Unix and Linux Operating Systems</li>
-                        <li>Unix Systems Administration</li>
-                        <li>Computer Systems Security fundamentals</li>
-                        <li>System-level troubleshooting</li>
-                        <li>Introductory DevOps and system configuration concepts</li>
-                    </ul>
-                </article>
-                <article class="skills-group">
-                    <h3>Data, Math, and Analytics</h3>
-                    <ul>
-                        <li>Data Mining fundamentals</li>
-                        <li>Information Retrieval concepts</li>
-                        <li>Artificial Intelligence fundamentals</li>
-                        <li>Numerical Analysis</li>
-                        <li>Linear and Discrete Mathematical Programming</li>
-                        <li>Statistics and Probability</li>
-                        <li>Analytical and problem-solving skills</li>
-                    </ul>
-                </article>
-                <article class="skills-group">
-                    <h3>Project and Professional Skills</h3>
-                    <ul>
-                        <li>IT Project Management</li>
-                        <li>Technical Documentation and Report Writing</li>
-                        <li>Research Methods in IT</li>
-                        <li>Senior Capstone Project execution</li>
-                        <li>Team-based software development</li>
-                        <li>Requirements gathering and analysis</li>
-                        <li>Time management and task prioritization</li>
-                    </ul>
-                </article>
-                <article class="skills-group">
-                    <h3>Tools and Business Skills</h3>
-                    <ul>
-                        <li>Unix and Linux command-line environment</li>
-                        <li>Database management systems at academic level</li>
-                        <li>Version control concepts with Git-level understanding</li>
-                        <li>Development and testing workflows</li>
-                        <li>System configuration and administration basics</li>
-                        <li>Technical communication</li>
-                        <li>Problem-solving and critical thinking</li>
-                        <li>Entrepreneurship</li>
-                        <li>Accounting and business process understanding</li>
-                        <li>Collaboration in academic and technical teams</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-     </div>
-     <div class="work-rail" id="work-rail" aria-hidden="true">
-        <div class="work-rail__backdrop" data-close-work-rail></div>
-        <aside class="work-rail__panel" role="dialog" aria-modal="true" aria-labelledby="work-rail-title">
-            <button type="button" class="work-rail__close" id="work-rail-close" aria-label="Close work experience panel">&times;</button>
-            <div class="work-rail__hero">
-                <p class="work-rail__eyebrow">Work Experience</p>
-                <h2 id="work-rail-title">Operational leadership, business execution, and ownership</h2>
-                <p class="work-rail__intro">
-                </p>
-            </div>
-            <div class="work-rail__timeline">
-                <article class="work-entry">
-                    <div class="work-entry__dot"></div>
-                    <div class="work-entry__content">
-                        <p class="work-entry__meta">Mar 2020 - Dec 2025</p>
-                        <h3>CEO &amp; Founder</h3>
-                        <p class="work-entry__company">Job Trading PLC</p>
-                        <ul>
-                            <li>Led end-to-end strategy execution and translated business requirements into scalable operational and technical solutions.</li>
-                            <li>Designed and implemented process workflows that improved efficiency and reduced execution delays.</li>
-                            <li>Conducted data-driven market and product analysis to identify trends, customer needs, and competitive risks.</li>
-                            <li>Owned budgeting and resource allocation decisions, optimizing ROI through cost and performance analysis.</li>
-                            <li>Monitored product quality and customer satisfaction to reinforce long-term brand trust.</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="work-entry">
-                    <div class="work-entry__dot"></div>
-                    <div class="work-entry__content">
-                        <p class="work-entry__meta">Operations and Inventory Leadership</p>
-                        <h3>Manager</h3>
-                        <p class="work-entry__company">Bisrat Asfaw Imports</p>
-                        <ul>
-                            <li>Managed inventory, logistics, and supplier coordination to ensure consistent product availability.</li>
-                            <li>Implemented workflow improvements in restocking and sales operations, increasing reliability and speed.</li>
-                            <li>Analyzed sales data and demand trends to guide forecasting and inventory planning.</li>
-                            <li>Coordinated cross-functional communication between suppliers, agents, and sales teams.</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="work-entry">
-                    <div class="work-entry__dot"></div>
-                    <div class="work-entry__content">
-                        <p class="work-entry__meta">Operations, Supply Chain, and Growth</p>
-                        <h3>COO &amp; Founder</h3>
-                        <p class="work-entry__company">Prime Store Trading PLC</p>
-                        <ul>
-                            <li>Led daily operations including inventory management, restocking strategy, and sales execution.</li>
-                            <li>Developed scalable operational processes to support business growth and improve execution speed.</li>
-                            <li>Communicated with international agents to maintain supply chain continuity and quality standards.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-            <div class="work-rail__footer">
-                <p>Aligned with ownership, customer focus, bias for action, and delivering results.</p>
-            </div>
-        </aside>
-     </div>
-     <p class="title">Projects</p>
-     <section id="projects" class="projects-main">
-        <p class="section-text-p1">My best builds</p>
-        <h2 class="projects-title">18 Portfolio Projects</h2>
-        <div class="projects-grid">
-            <article class="project-card">
-                <img src="https://cdn.pixabay.com/photo/2021/08/06/00/37/stock-trading-6525081_640.jpg" alt="XAU/USD Trading AI" class="img-Project" loading="lazy">
-                <h3>XAU/USD Trading AI</h3>
-                <p>Built a web-based AI system for XAU/USD price analysis and prediction using historical market data.</p>
-                <p class="project-tech">Python, Machine Learning, Web Technologies</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=400&q=70" alt="Project Management System" class="img-Project" loading="lazy">
-                <h3>Project Management System</h3>
-                <p>Designed a project management system for real-world organizational use to solve workflow challenges.</p>
-                <p class="project-tech">Web Technologies, Database Systems</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=400&q=70" alt="Network Design" class="img-Project" loading="lazy">
-                <h3>Organization-Level Network Design</h3>
-                <p>Designed and configured enterprise network routing in a scalable simulated infrastructure.</p>
-                <p class="project-tech">Cisco Packet Tracer, Networking Protocols</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=400&q=70" alt="Luna Agro Industries IT Systems Research" class="img-Project" loading="lazy">
-                <h3>Luna Agro Industries IT Systems Research</h3>
-                <p>Analyzed IT system implementation strategies and recommended ways to improve operational efficiency.</p>
-                <p class="project-tech">IT Systems Analysis, Research Methods</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1745848413099-13adc3aaf308?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Social Network Application" class="img-Project" loading="lazy">
-                <h3>Social Network Application (Socall)</h3>
-                <p>Developed an Android social networking app with real-time messaging and WhatsApp-like communication features.</p>
-                <p class="project-tech">Java, Android Studio, Mobile Development</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1766299892683-d50398e31823?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neSUyMG1lZGljYWx8ZW58MHx8MHx8fDA%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Health Prediction Data Mining Project" class="img-Project" loading="lazy">
-                <h3>Health Prediction Data Mining Project</h3>
-                <p>Trained AI models to predict stroke and diabetes using supervised learning and data mining techniques.</p>
-                <p class="project-tech">Python, Machine Learning, Data Mining</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=400&q=70" alt="Instruction-Level Algorithm Project" class="img-Project" loading="lazy">
-                <h3>Instruction-Level Algorithm Project</h3>
-                <p>Developed instruction-level execution algorithms by applying compiler design principles.</p>
-                <p class="project-tech">C++, Compiler Design</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1636793298494-a79e1998d6a9?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjZSUyMGRldGVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Face Emotion Recognition System" class="img-Project" loading="lazy">
-                <h3>Face Emotion Recognition System</h3>
-                <p>Built an AI model to detect faces and recognize emotions from image datasets.</p>
-                <p class="project-tech">Python, Artificial Intelligence, Computer Vision</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=400&q=70" alt="Streaming Website" class="img-Project" loading="lazy">
-                <h3>Streaming Website</h3>
-                <p>Developed a movie and TV streaming platform with a backend database for content management.</p>
-                <p class="project-tech">ASP.NET, Database Systems</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000" alt="Dantel 3D Graphics Project" class="img-Project" loading="lazy">
-                <h3>Dantel 3D Graphics Project</h3>
-                <p>Modeled a traditional fabric design in 3D using computer graphics rendering techniques.</p>
-                <p class="project-tech">C++, Computer Graphics</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=400&q=70" alt="Web Scraper Application" class="img-Project" loading="lazy">
-                <h3>Web Scraper Application</h3>
-                <p>Built an automated web data extraction tool and processed scraped data efficiently.</p>
-                <p class="project-tech">C#, Web Scraping</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=400&q=70" alt="Train Management and Dispatch System" class="img-Project" loading="lazy">
-                <h3>Train Management &amp; Dispatch System</h3>
-                <p>Developed a train dispatch and management system with optimized data structure workflows.</p>
-                <p class="project-tech">C++, MSSQL, Data Structures</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=400&q=70" alt="Web-Based Employee Attendance System" class="img-Project" loading="lazy">
-                <h3>Web-Based Employee Attendance System</h3>
-                <p>Created a web-based attendance and management platform for employee record tracking.</p>
-                <p class="project-tech">HTML, CSS, JavaScript, MSSQL</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=70" alt="Employee Record Management System" class="img-Project" loading="lazy">
-                <h3>Employee Record Management System</h3>
-                <p>Built an object-oriented employee management system backed by a relational database.</p>
-                <p class="project-tech">C#, MSSQL</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=400&q=70" alt="Notepad Application" class="img-Project" loading="lazy">
-                <h3>Notepad Application</h3>
-                <p>Built a desktop notepad application by applying object-oriented programming concepts.</p>
-                <p class="project-tech">Java, OOP</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=70" alt="Employee Record and Attendance Management" class="img-Project" loading="lazy">
-                <h3>Employee Record &amp; Attendance Management</h3>
-                <p>Designed an attendance-based employee record system with database-driven record management.</p>
-                <p class="project-tech">MSSQL, DBMS</p>
-            </article>
-            <article class="project-card">
-                <img src="https://images.unsplash.com/photo-1612404730960-5c71577fca11?auto=format&fit=crop&w=400&q=70" alt="Tetris Game Development" class="img-Project" loading="lazy">
-                <h3>Game Development: Tetris</h3>
-                <p>Developed a playable Tetris game with core game logic and user controls.</p>
-                <p class="project-tech">C++, Game Development</p>
-            </article>
-            <article class="project-card">
-                <img src="https://cdn.pixabay.com/photo/2015/01/27/19/42/diary-614149_640.jpg" alt="Calendar System" class="img-Project" loading="lazy">
-                <h3>Calendar System</h3>
-                <p>Built a calendar application with scheduling, reminders, and event management logic.</p>
-                <p class="project-tech">C++</p>
-            </article>
-        </div>
-     </section>
-     <p class="title">Builds &amp; Experiments</p>
-     <section id="builds" class="builds-main">
-        <p class="section-text-p1">AI-assisted &amp; personal builds</p>
-        <h2 class="builds-title">10 Builds &amp; Experiments</h2>
-        <div class="builds-grid">
-
-            <article class="build-card">
-                <span class="build-badge">AI-Powered</span>
-                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400&q=70" alt="APEX Dropshipping Platform" class="img-build" loading="lazy">
-                <h3>APEX Dropshipping Platform</h3>
-                <p>Enterprise AI dropshipping platform integrating Shopify, Claude AI for product scoring, and Stripe for payments — built for real merchant scale.</p>
-                <p class="build-tech">Next.js 15 &middot; TypeScript &middot; Anthropic Claude &middot; Supabase &middot; Stripe &middot; Clerk</p>
-            </article>
-
-            <article class="build-card">
-                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&q=70" alt="Inv Advisor" class="img-build" loading="lazy">
-                <h3>Inv Advisor</h3>
-                <p>Local-first investment research workstation with a 50,000+ company database, five complementary scoring algorithms, and portfolio watchlist management.</p>
-                <p class="build-tech">Next.js 15 &middot; TypeScript &middot; Prisma &middot; SQLite &middot; TanStack Query &middot; shadcn/ui</p>
-            </article>
-
-            <article class="build-card">
-                <span class="build-badge">AI-Powered</span>
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=70" alt="PerAI View" class="img-build" loading="lazy">
-                <h3>PerAI View</h3>
-                <p>Real-time geospatial platform mapping global AI activity on a 3D interactive globe with ML-powered program classification and live WebSocket updates.</p>
-                <p class="build-tech">React 18 &middot; CesiumJS &middot; D3.js &middot; FastAPI &middot; scikit-learn &middot; PostgreSQL/PostGIS</p>
-            </article>
-
-            <article class="build-card">
-                <span class="build-badge">AI-Powered</span>
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=70" alt="Newsletter Platform" class="img-build" loading="lazy">
-                <h3>Newsletter Platform</h3>
-                <p>Serverless newsletter aggregating 100+ RSS sources across 26 categories with AI article summaries, premium subscriptions, and Cloudflare edge deployment.</p>
-                <p class="build-tech">Next.js 15 &middot; TypeScript &middot; Neon Postgres &middot; OpenAI &middot; Stripe &middot; Cloudflare Workers</p>
-            </article>
-
-            <article class="build-card">
-                <span class="build-badge">AI-Powered</span>
-                <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=70" alt="Newsletter CMS" class="img-build" loading="lazy">
-                <h3>Newsletter CMS</h3>
-                <p>Advanced headless newsletter CMS with Payload content management, AI-powered article generation, rich text editing, and subscription management.</p>
-                <p class="build-tech">Next.js 16 &middot; Payload CMS &middot; MongoDB &middot; OpenAI &middot; Stripe &middot; Better-Auth</p>
-            </article>
-
-            <article class="build-card">
-                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=400&q=70" alt="NWL Newsletter App" class="img-build" loading="lazy">
-                <h3>NWL Newsletter App</h3>
-                <p>Full-stack newsletter system with automated news aggregation from NewsAPI, passwordless email OTP authentication, and category-based content delivery.</p>
-                <p class="build-tech">Node.js &middot; Express &middot; NewsAPI &middot; Nodemailer &middot; SQLite</p>
-            </article>
-
-            <article class="build-card">
-                <img src="https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=400&q=70" alt="EUR/USD Scalping Bot" class="img-build" loading="lazy">
-                <h3>EUR/USD Scalping Bot</h3>
-                <p>Risk-controlled forex micro-scalping bot using EMA/RSI signal generation with OANDA live integration, paper trading mode, and a real-time web dashboard.</p>
-                <p class="build-tech">Node.js &middot; Express &middot; EMA/RSI &middot; OANDA API &middot; Alpha Vantage</p>
-            </article>
-
-            <article class="build-card">
-                <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=400&q=70" alt="XAUUSD Trading Bot" class="img-build" loading="lazy">
-                <h3>XAUUSD Trading Bot</h3>
-                <p>Web scaffold for a gold liquidity trading bot with backtest visualization, CSV data upload, SSE log streaming, and built-in strategy documentation.</p>
-                <p class="build-tech">Node.js &middot; Express &middot; Vite &middot; SSE &middot; OANDA API</p>
-            </article>
-
-            <article class="build-card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=70" alt="EA Tester Algo Platform" class="img-build" loading="lazy">
-                <h3>EA Tester — Algo Platform</h3>
-                <p>Institutional-grade algorithmic trading platform blueprint covering deterministic backtesting, Monte Carlo optimization, and live MT5/IBKR adapter design.</p>
-                <p class="build-tech">Python &middot; FastAPI &middot; Next.js &middot; DuckDB &middot; PostgreSQL (Architecture)</p>
-            </article>
-
-            <article class="build-card">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=70" alt="adb+ Ad Blocker" class="img-build" loading="lazy">
-                <h3>adb+ Ad Blocker</h3>
-                <p>Lightweight Chrome Manifest V3 extension blocking ads and trackers across major ad networks with DOM cleaning and mutation-observer dynamic removal.</p>
-                <p class="build-tech">Chrome Extension (MV3) &middot; JavaScript &middot; CSS</p>
-            </article>
-
-        </div>
-     </section>
-    <section id="contact" class="contact-main">
-        <p class="section-text-p1">Let us connect</p>
-        <h2 class="contact-title">Contact</h2>
-        <div class="contact-layout">
-            <div class="contact-cards">
-                <a class="contact-card" href="mailto:Serurbisrat@gmail.com">
-                    <h3>Email</h3>
-                    <p>Serurbisrat@gmail.com</p>
-                </a>
-                <a class="contact-card" href="tel:+12272820219">
-                    <h3>Phone</h3>
-                    <p>+1 (227) 282-0219</p>
-                </a>
-                <a class="contact-card" href="https://www.linkedin.com/in/bisrat-serur/" target="_blank" rel="noopener noreferrer">
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/bisrat-serur</p>
-                </a>
-                <a class="contact-card" href="https://app.joinhandshake.com/profiles/bisratserur" target="_blank" rel="noopener noreferrer">
-                    <h3>Handshake</h3>
-                    <p>app.joinhandshake.com/profiles/bisratserur</p>
-                </a>
-                <a class="contact-card" href="https://github.com/bisratasfaw/" target="_blank" rel="noopener noreferrer">
-                    <h3>GitHub</h3>
-                    <p>github.com/bisratasfaw</p>
-                </a>
-            </div>
-            <form class="contact-form" action="#" method="post" data-recipient-email="Serurbisrat@gmail.com">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required>
-
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="your@email.com" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-
-                <button type="submit" class="btn btn-color-1">Send Message</button>
-                <p class="contact-form-status" aria-live="polite"></p>
-            </form>
-        </div>
-    </section>
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p class="footer-name">Bisrat Serur</p>
-            <ul class="footer-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#builds">Builds</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <p class="footer-copy">&copy; 2026 Bisrat Serur. All rights reserved.</p>
-        </div>
-    </footer>
-<!-- ── Card detail modal ─────────────────────────────────── -->
-<div class="card-modal" id="card-modal" aria-hidden="true">
-    <div class="card-modal__backdrop" data-close-card-modal></div>
-    <div class="card-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="card-modal-title">
-        <button type="button" class="card-modal__close" id="card-modal-close" aria-label="Close project details">&times;</button>
-        <img class="card-modal__img" id="card-modal-img" alt="" loading="lazy">
-        <div class="card-modal__body">
-            <span class="card-modal__badge" id="card-modal-badge"></span>
-            <h2 class="card-modal__title" id="card-modal-title"></h2>
-            <p class="card-modal__desc" id="card-modal-desc"></p>
-            <pre class="card-modal__code" id="card-modal-code"><code id="card-modal-snippet"></code></pre>
-            <p class="card-modal__tech" id="card-modal-tech"></p>
-        </div>
+<nav id="site-nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a class="nav-name" href="#hero">Bisrat Serur</a>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#flagship">Flagship</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20.6 14.6A8.6 8.6 0 0 1 9.4 3.4a8.6 8.6 0 1 0 11.2 11.2Z"/>
+        </svg>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-</div>
+  </div>
+</nav>
+
+<header id="hero">
+  <p class="hero-kicker">Bisrat Serur</p>
+  <h1>AI/ML engineering, shipped end to end.</h1>
+  <p class="hero-sub">From PyTorch model training and rigorous evaluation to FastAPI services, data pipelines, and production Next.js interfaces.</p>
+  <div class="hero-ctas">
+    <a class="btn btn-primary" href="#flagship">View work</a>
+    <a class="btn btn-quiet" href="./assets/BisratSerurResume.pdf" target="_blank" rel="noopener">Download resume</a>
+  </div>
+</header>
+
+<section id="proof" aria-label="Highlights">
+  <div class="container">
+    <div class="stat-grid reveal">
+      <div>
+        <div class="stat-num"><em>4.5x</em></div>
+        <p class="stat-label">model F1 lift over baseline via two-stage transfer learning</p>
+      </div>
+      <div>
+        <div class="stat-num">100+</div>
+        <p class="stat-label">live RSS sources ingested on a 5-minute serverless cron</p>
+      </div>
+      <div>
+        <div class="stat-num">6</div>
+        <p class="stat-label">production SaaS platforms built and operated solo</p>
+      </div>
+      <div>
+        <div class="stat-num">5</div>
+        <p class="stat-label">Stripe billing tiers running with HMAC-verified webhooks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flagship">
+  <div class="container">
+    <div class="flagship-head reveal">
+      <p class="app-name">TerrAlert.io</p>
+      <h2>Satellite change detection. In production.</h2>
+      <p>A Siamese U-Net trained on Sentinel-2 imagery flags land change per pixel, backed by a leakage-audited evaluation protocol and a distributed FastAPI and Celery backend.</p>
+    </div>
+    <div class="flagship-visual reveal">
+      <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=75" alt="Satellite view of Earth from orbit" loading="lazy">
+    </div>
+    <div class="flagship-cols">
+      <div class="flagship-metrics reveal">
+        <div class="metric-tile">
+          <div class="m-num">F1 0.330</div>
+          <p class="m-label">95% CI 0.306 to 0.355 on a held-out 324-chip SpaceNet7 test set, 2,000-sample bootstrap</p>
+        </div>
+        <div class="metric-tile">
+          <div class="m-num">10 m</div>
+          <p class="m-label">per-pixel change masks from co-registered Sentinel-2 image pairs</p>
+        </div>
+        <div class="metric-tile">
+          <div class="m-num">3</div>
+          <p class="m-label">public benchmarks in the training-chip pipeline: LEVIR-CD, OSCD, SpaceNet7</p>
+        </div>
+        <div class="metric-tile">
+          <div class="m-num">2</div>
+          <p class="m-label">data-leakage post-mortems documented to keep inflated metrics out of production</p>
+        </div>
+      </div>
+      <div class="flagship-points reveal">
+        <div>
+          <h3>Honest evaluation, by design</h3>
+          <p>Threshold locked on validation, single-pass test, city-level held-out splits, and bootstrap confidence intervals. A negative result that lowered F1 was documented, not hidden.</p>
+        </div>
+        <div>
+          <h3>Geospatial ETL at scale</h3>
+          <p>Copernicus Sentinel-2 ingestion through eodag, GDAL and rasterio processing, PostGIS vector tiles, self-hosted TiTiler, and corroboration feeds from NASA FIRMS and GLAD.</p>
+        </div>
+        <div>
+          <h3>Hardened for real users</h3>
+          <p>Supabase JWT verification, Stripe billing across five tiers, Fernet field encryption with key rotation, GDPR endpoints, Sentry and Prometheus, and verified nightly backups.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flagship-cta reveal">
+      <a class="btn btn-primary" href="https://terralert.io" target="_blank" rel="noopener">Visit TerrAlert.io</a>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Production platforms.</h2>
+      <p>Six systems designed, built, secured, and operated as a one-person engineering org.</p>
+    </div>
+    <div class="bento">
+
+      <article class="bento-card span-4 reveal">
+        <div class="bento-media">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=70" alt="Elegant wedding venue with lighting" loading="lazy">
+        </div>
+        <div class="bento-body">
+          <p class="b-role">Multi-tenant marketplace SaaS</p>
+          <h3>Vows &amp; Volts</h3>
+          <p>Four-role wedding marketplace across ~59 routes with Stripe Connect payments, an Anthropic Claude AI concierge, Leonardo AI venue re-imagination, and a Playwright QA harness producing ~170 screenshots per run.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Next.js 16</span><span class="tech-chip">React 19</span><span class="tech-chip">Prisma 7</span><span class="tech-chip">PostgreSQL 16</span><span class="tech-chip">Stripe Connect</span><span class="tech-chip">Claude SDK</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="bento-card span-2 tinted reveal">
+        <div class="bento-media">
+          <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=70" alt="Stack of printed newspapers" loading="lazy">
+        </div>
+        <div class="bento-body">
+          <p class="b-role">LLM-powered news SaaS</p>
+          <h3>Newsletter Intelligence</h3>
+          <p>100+ RSS sources across 26 categories on a 5-minute edge cron, with monetized gpt-4o-mini summaries and a decay-weighted personalization engine.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Next.js 15</span><span class="tech-chip">Cloudflare Workers</span><span class="tech-chip">Neon</span><span class="tech-chip">OpenAI</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="bento-card span-2 reveal">
+        <div class="bento-media">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=70" alt="Earth at night with city lights from space" loading="lazy">
+        </div>
+        <div class="bento-body">
+          <p class="b-role">Real-time geospatial analytics</p>
+          <h3>PerAI View</h3>
+          <p>Global AI usage streamed to a CesiumJS 3D globe: polyglot ingestion, a scikit-learn classifier microservice, and Redis pub/sub fan-out on a 5-second cadence.</p>
+          <div class="tech-row">
+            <span class="tech-chip">React</span><span class="tech-chip">CesiumJS</span><span class="tech-chip">FastAPI</span><span class="tech-chip">PostGIS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="bento-card span-2 reveal">
+        <div class="bento-media">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=70" alt="Card payment at a point of sale" loading="lazy">
+        </div>
+        <div class="bento-body">
+          <p class="b-role">Commerce automation SaaS</p>
+          <h3>APEX Dropship AI</h3>
+          <p>Bi-directional Shopify sync with rate-limit pacing, idempotent upserts, reverse-ETL write-back, and a stateless HMAC-secured OAuth handshake.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Next.js</span><span class="tech-chip">Supabase</span><span class="tech-chip">Shopify API</span><span class="tech-chip">Claude SDK</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="bento-card span-2 tinted reveal">
+        <div class="bento-media">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=70" alt="Stock market charts on a screen" loading="lazy">
+        </div>
+        <div class="bento-body">
+          <p class="b-role">Equity screening workstation</p>
+          <h3>InvAdvisor</h3>
+          <p>Five weighted scoring models over a normalized 7-table fundamentals schema, precomputed for interactive screening across a 50,000-ticker universe.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Next.js 15</span><span class="tech-chip">TypeScript</span><span class="tech-chip">Prisma</span><span class="tech-chip">TanStack</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="bento-card span-4 reveal">
+        <div class="bento-media">
+          <img src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=1200&q=70" alt="Gold bars and financial data" loading="lazy">
+        </div>
+        <div class="bento-body">
+          <p class="b-role">Quantitative research and trading</p>
+          <h3>Algorithmic Trading Systems</h3>
+          <p>A deterministic backtesting platform on Parquet, DuckDB, and Polars with walk-forward and Monte Carlo validation, HMM regime classification, and a live EUR/USD execution service kept paper-by-default behind a two-step arm code.</p>
+          <div class="tech-row">
+            <span class="tech-chip">Python</span><span class="tech-chip">Polars</span><span class="tech-chip">DuckDB</span><span class="tech-chip">Numba</span><span class="tech-chip">hmmlearn</span><span class="tech-chip">OANDA v20</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Deep in two stacks.</h2>
+      <p>Python for models and pipelines. TypeScript for products people pay for.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card dark reveal">
+        <h3>AI &amp; Machine Learning</h3>
+        <p class="s-sub">Training, evaluation, and honest metrics</p>
+        <div class="chip-row">
+          <span class="chip">PyTorch</span><span class="chip">Siamese / U-Net</span><span class="chip">Transfer learning</span><span class="chip">scikit-learn</span><span class="chip">Computer vision</span><span class="chip">Bootstrap CIs</span><span class="chip">Leakage auditing</span><span class="chip">HMMs</span>
+        </div>
+      </div>
+      <div class="skill-card tint reveal">
+        <h3>LLM Engineering</h3>
+        <p class="s-sub">Monetized AI features in production</p>
+        <div class="chip-row">
+          <span class="chip">Anthropic Claude SDK</span><span class="chip">OpenAI API</span><span class="chip">Prompt engineering</span><span class="chip">Feature gating</span><span class="chip">Agent skills</span><span class="chip">AGENTS.md specs</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Data Engineering</h3>
+        <p class="s-sub">Pipelines that run every day</p>
+        <div class="chip-row">
+          <span class="chip">Celery + Redis</span><span class="chip">Polars</span><span class="chip">DuckDB</span><span class="chip">Parquet</span><span class="chip">GDAL / rasterio</span><span class="chip">PostGIS</span><span class="chip">ETL / reverse ETL</span><span class="chip">Cloudflare Workers</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3>Full-Stack &amp; Production</h3>
+        <p class="s-sub">Billing, auth, security, observability</p>
+        <div class="chip-row">
+          <span class="chip">Next.js 15/16</span><span class="chip">React 19</span><span class="chip">FastAPI</span><span class="chip">Prisma</span><span class="chip">Stripe</span><span class="chip">OAuth / JWT</span><span class="chip">Docker</span><span class="chip">Sentry + Prometheus</span><span class="chip">Playwright</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Experience.</h2>
+      <p>Founder-level ownership, from problem framing to production operations.</p>
+    </div>
+    <div class="exp-feature reveal">
+      <div class="exp-card">
+        <p class="e-when">Jan 2025 to present, Silver Spring, MD</p>
+        <h3>Founder &amp; Lead Engineer</h3>
+        <p class="e-org">Independent AI &amp; Data Platform Development</p>
+        <p>Full lifecycle ownership of the platforms above: data acquisition, model training, backend and pipeline engineering, front-end delivery, billing, security hardening, and production operations, run with migration-managed schemas, automated QA harnesses, and documented post-mortems.</p>
+      </div>
+      <div class="exp-card">
+        <p class="e-when">In progress</p>
+        <h3>MS, Computer Science</h3>
+        <p class="e-org">University of the Potomac</p>
+        <p>Preceded by a BS in Computer Science from HiLCoE School of Computer Science and Technology, Addis Ababa. Additional focus on AI-directed engineering: agent skills, operating specs, and automated verification harnesses. Intermediate Chinese.</p>
+      </div>
+    </div>
+    <div class="exp-list reveal">
+      <div class="exp-row">
+        <div>
+          <div class="r-title">Operations &amp; Analytics Lead</div>
+          <div class="r-org">Prime Store Trading PLC</div>
+        </div>
+        <div class="r-when">Jun 2025 to Dec 2025</div>
+      </div>
+      <div class="exp-row">
+        <div>
+          <div class="r-title">Operations &amp; Systems Manager</div>
+          <div class="r-org">Job Trading PLC</div>
+        </div>
+        <div class="r-when">Aug 2023 to Dec 2025</div>
+      </div>
+      <div class="exp-row">
+        <div>
+          <div class="r-title">Founder &amp; Operations Director</div>
+          <div class="r-org">Bisrat Asfaw Imports</div>
+        </div>
+        <div class="r-when">Jun 2021 to Dec 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="archive">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Earlier work.</h2>
+      <p>Academic and foundation projects across systems, ML, and application development.</p>
+    </div>
+  </div>
+  <div class="container rail-wrap">
+    <div class="rail reveal">
+      <div class="rail-card"><h4>XAU/USD Trading AI</h4><p>Web-based AI system for gold price analysis and prediction from historical market data.</p><span class="r-tech">Python, ML</span></div>
+      <div class="rail-card"><h4>Health Prediction Data Mining</h4><p>Supervised models predicting stroke and diabetes risk from clinical datasets.</p><span class="r-tech">Python, Data Mining</span></div>
+      <div class="rail-card"><h4>Face Emotion Recognition</h4><p>AI model detecting faces and classifying emotions from image datasets.</p><span class="r-tech">Python, Computer Vision</span></div>
+      <div class="rail-card"><h4>Social Network App</h4><p>Android app with real-time messaging and WhatsApp-style communication.</p><span class="r-tech">Java, Android</span></div>
+      <div class="rail-card"><h4>Project Management System</h4><p>Workflow management system designed for real organizational use.</p><span class="r-tech">Web, Databases</span></div>
+      <div class="rail-card"><h4>Enterprise Network Design</h4><p>Scalable routed network designed and configured in simulation.</p><span class="r-tech">Cisco Packet Tracer</span></div>
+      <div class="rail-card"><h4>Streaming Website</h4><p>Movie and TV streaming platform with database-backed content management.</p><span class="r-tech">ASP.NET, SQL</span></div>
+      <div class="rail-card"><h4>Compiler-Level Algorithms</h4><p>Instruction-level execution algorithms applying compiler design principles.</p><span class="r-tech">C++, Compilers</span></div>
+      <div class="rail-card"><h4>Train Dispatch System</h4><p>Train management and dispatch with optimized data-structure workflows.</p><span class="r-tech">C++, MSSQL</span></div>
+      <div class="rail-card"><h4>Web Scraper</h4><p>Automated web data extraction and processing tool.</p><span class="r-tech">C#</span></div>
+      <div class="rail-card"><h4>Employee Attendance System</h4><p>Web-based attendance and record-tracking platform.</p><span class="r-tech">JavaScript, MSSQL</span></div>
+      <div class="rail-card"><h4>3D Graphics: Dantel</h4><p>Traditional fabric design modeled with 3D rendering techniques.</p><span class="r-tech">C++, Graphics</span></div>
+      <div class="rail-card"><h4>Tetris</h4><p>Playable Tetris with full game logic and user controls.</p><span class="r-tech">C++</span></div>
+      <div class="rail-card"><h4>IT Systems Research</h4><p>IT implementation strategy analysis for Luna Agro Industries.</p><span class="r-tech">Systems Analysis</span></div>
+      <div class="rail-card"><h4>Chrome Ad Blocker</h4><p>Manifest V3 extension with DOM cleaning and mutation-observer removal.</p><span class="r-tech">JavaScript, MV3</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <h2>Let's talk.</h2>
+      <p class="c-sub">Open to AI/ML, data engineering, and full-stack roles.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:serurbisrat@gmail.com">Email me</a>
+        <a class="btn btn-quiet" href="tel:+12272820219">+1 (227) 282-0219</a>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/bisratasfaw" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/bisratasfaw" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://app.joinhandshake.com/profiles/bisratserur" target="_blank" rel="noopener">Handshake</a>
+        <a href="https://terralert.io" target="_blank" rel="noopener">TerrAlert.io</a>
+        <a href="https://vowsandvolts.com" target="_blank" rel="noopener">VowsAndVolts.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 Bisrat Serur. Silver Spring, MD.</span>
+    <nav aria-label="Footer">
+      <a href="#flagship">Flagship</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+
 <script src="Script.js"></script>
-    <style></style>
-   
 </body>
 </html>
-
