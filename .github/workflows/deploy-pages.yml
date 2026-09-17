@@ -1,0 +1,96 @@
+name: Deploy portfolio to GitHub Pages
+
+# Publishes this site, plus the PerAI View demo built from its own repository and served at
+# /perai-view/. Nothing from that build is committed here.
+#
+# One-time setup: Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
+# The weekly run picks up changes pushed to the perai-view repository; you can also start it
+# by hand from the Actions tab.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  DEMO_REPO: bisratasfaw/perai-view
+  SITE_URL: https://bisratasfaw.github.io/Portfolio-HTML-CSS-1/
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the portfolio
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Check out PerAI View
+        uses: actions/checkout@v7
+        with:
+          repository: ${{ env.DEMO_REPO }}
+          ref: main
+          path: .perai-view
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: .perai-view/frontend/package-lock.json
+
+      - name: Install PerAI View dependencies
+        run: npm ci
+        working-directory: .perai-view/frontend
+
+      - name: Build the PerAI View demo
+        run: npm run build
+        working-directory: .perai-view/frontend
+        env:
+          # Asset URLs are relative, so the build works under any sub-path.
+          VITE_SITE_URL: ${{ env.SITE_URL }}perai-view/
+          VITE_REPO_URL: ${{ github.server_url }}/${{ env.DEMO_REPO }}
+
+      - name: Assemble the site
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='.perai-view' --exclude='_site' ./ _site/
+          mkdir -p _site/perai-view
+          cp -r .perai-view/frontend/dist/. _site/perai-view/
+
+      - name: Check the demo was included correctly
+        run: |
+          test -f _site/index.html
+          test -f _site/perai-view/index.html
+          test -f _site/perai-view/cesium/Cesium.js
+          grep -Eq '<script[^>]*src="(\./)?cesium/Cesium\.js"' _site/perai-view/index.html
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

@@ -462,6 +462,30 @@ body.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-5px) rotat
   border-radius: 980px;
   padding: 5px 12px;
 }
+.b-links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.b-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+.b-link::after {
+  content: "\2192";
+  transition: transform 0.2s ease;
+}
+.b-link:hover { text-decoration: underline; }
+.b-link:hover::after { transform: translateX(3px); }
+.b-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { .b-link::after { transition: none; } }
+
 .bento-card.tinted { background: var(--accent-tint); }
 .bento-card.tinted .tech-chip { background: var(--tint-chip-bg); color: var(--tint-chip-ink); }
 @media (max-width: 900px) {
