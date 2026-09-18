@@ -4,15 +4,16 @@ name: Deploy portfolio to GitHub Pages
 # /perai-view/. Nothing from that build is committed here.
 #
 # One-time setup: Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
-# The weekly run picks up changes pushed to the perai-view repository; you can also start it
-# by hand from the Actions tab.
+# The daily run (05:30 UTC, after perai-view's nightly data refresh at 04:15 UTC) picks up
+# changes pushed to the perai-view repository, including its refreshed data/real snapshots;
+# you can also start it by hand from the Actions tab.
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'
+    - cron: '30 5 * * *'
 
 permissions:
   contents: read
